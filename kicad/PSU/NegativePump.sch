@@ -1,0 +1,383 @@
+EESchema Schematic File Version 2
+LIBS:PSU-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PSU-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP C201
+U 1 1 57C6DB1A
+P 4950 3400
+AR Path="/57C6D5E2/57C6DB1A" Ref="C201"  Part="1" 
+AR Path="/57C72927/57C6DB1A" Ref="C301"  Part="1" 
+F 0 "C301" H 4975 3500 50  0000 L CNN
+F 1 "22u" H 4975 3300 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x6.3mm_RM2.5_CopperClear" H 4988 3250 30  0001 C CNN
+F 3 "" H 4950 3400 60  0000 C CNN
+	1    4950 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D204
+U 1 1 57C6DB21
+P 5200 3650
+AR Path="/57C6D5E2/57C6DB21" Ref="D204"  Part="1" 
+AR Path="/57C72927/57C6DB21" Ref="D304"  Part="1" 
+F 0 "D304" H 5200 3750 50  0000 C CNN
+F 1 "1N4148" H 5200 3550 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 5200 3650 60  0001 C CNN
+F 3 "" H 5200 3650 60  0000 C CNN
+	1    5200 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L D D203
+U 1 1 57C6DB28
+P 5200 3150
+AR Path="/57C6D5E2/57C6DB28" Ref="D203"  Part="1" 
+AR Path="/57C72927/57C6DB28" Ref="D303"  Part="1" 
+F 0 "D303" H 5200 3250 50  0000 C CNN
+F 1 "1N4148" H 5200 3050 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 5200 3150 60  0001 C CNN
+F 3 "" H 5200 3150 60  0000 C CNN
+	1    5200 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C202
+U 1 1 57C6DB2F
+P 5500 3400
+AR Path="/57C6D5E2/57C6DB2F" Ref="C202"  Part="1" 
+AR Path="/57C72927/57C6DB2F" Ref="C302"  Part="1" 
+F 0 "C302" H 5525 3500 50  0000 L CNN
+F 1 "22u" H 5525 3300 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x6.3mm_RM2.5_CopperClear" H 5538 3250 30  0001 C CNN
+F 3 "" H 5500 3400 60  0000 C CNN
+	1    5500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D205
+U 1 1 57C6DB36
+P 6000 3400
+AR Path="/57C6D5E2/57C6DB36" Ref="D205"  Part="1" 
+AR Path="/57C72927/57C6DB36" Ref="D305"  Part="1" 
+F 0 "D305" H 6000 3500 50  0000 C CNN
+F 1 "4V7" H 6000 3300 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 6000 3400 60  0001 C CNN
+F 3 "" H 6000 3400 60  0000 C CNN
+	1    6000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R205
+U 1 1 57C6DB3D
+P 5750 3900
+AR Path="/57C6D5E2/57C6DB3D" Ref="R205"  Part="1" 
+AR Path="/57C72927/57C6DB3D" Ref="R305"  Part="1" 
+F 0 "R305" V 5830 3900 50  0000 C CNN
+F 1 "10k" V 5750 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5680 3900 30  0001 C CNN
+F 3 "" H 5750 3900 30  0000 C CNN
+	1    5750 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C203
+U 1 1 57C6DB44
+P 6300 3400
+AR Path="/57C6D5E2/57C6DB44" Ref="C203"  Part="1" 
+AR Path="/57C72927/57C6DB44" Ref="C303"  Part="1" 
+F 0 "C303" H 6325 3500 50  0000 L CNN
+F 1 "10u" H 6325 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6338 3250 30  0001 C CNN
+F 3 "" H 6300 3400 60  0000 C CNN
+	1    6300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC858 Q204
+U 1 1 57C6DB4B
+P 6000 4200
+AR Path="/57C6D5E2/57C6DB4B" Ref="Q204"  Part="1" 
+AR Path="/57C72927/57C6DB4B" Ref="Q304"  Part="1" 
+F 0 "Q304" H 6200 4275 50  0000 L CNN
+F 1 "BC860" H 6200 4200 50  0000 L CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 6200 4125 50  0000 L CIN
+F 3 "" H 6000 4200 50  0000 L CNN
+	1    6000 4200
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C204
+U 1 1 57C6DB52
+P 6600 3400
+AR Path="/57C6D5E2/57C6DB52" Ref="C204"  Part="1" 
+AR Path="/57C72927/57C6DB52" Ref="C304"  Part="1" 
+F 0 "C304" H 6625 3500 50  0000 L CNN
+F 1 "100n" H 6625 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6638 3250 30  0001 C CNN
+F 3 "" H 6600 3400 60  0000 C CNN
+	1    6600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3400 5200 3400
+Wire Wire Line
+	5200 3300 5200 3500
+Connection ~ 5200 3400
+Wire Wire Line
+	5200 3000 5200 2900
+Wire Wire Line
+	5200 2900 7000 2900
+Wire Wire Line
+	6600 2900 6600 3250
+Wire Wire Line
+	5900 3900 6300 3900
+Wire Wire Line
+	6300 3900 6300 3550
+Wire Wire Line
+	6000 3600 6000 4000
+Connection ~ 6000 3900
+Wire Wire Line
+	6300 3250 6300 2900
+Connection ~ 6300 2900
+Wire Wire Line
+	6000 3200 6000 2900
+Connection ~ 6000 2900
+Wire Wire Line
+	5500 3250 5500 2900
+Connection ~ 5500 2900
+Wire Wire Line
+	5200 3800 5200 3900
+Wire Wire Line
+	5200 3900 5600 3900
+Wire Wire Line
+	5500 3550 5500 4300
+Connection ~ 5500 3900
+Wire Wire Line
+	6200 4300 7000 4300
+Wire Wire Line
+	6600 4300 6600 3550
+Wire Wire Line
+	5500 4300 5800 4300
+Connection ~ 6600 2900
+Connection ~ 6600 4300
+$Comp
+L R R204
+U 1 1 57C6DCAE
+P 4550 3400
+AR Path="/57C6D5E2/57C6DCAE" Ref="R204"  Part="1" 
+AR Path="/57C72927/57C6DCAE" Ref="R304"  Part="1" 
+F 0 "R304" V 4630 3400 50  0000 C CNN
+F 1 "100" V 4550 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4480 3400 30  0001 C CNN
+F 3 "" H 4550 3400 30  0000 C CNN
+	1    4550 3400
+	0    1    1    0   
+$EndComp
+Text HLabel 7000 2900 2    60   Input ~ 0
++
+Text HLabel 7000 4300 2    60   Input ~ 0
+-
+Text HLabel 2500 3700 0    60   Input ~ 0
+AC2
+Wire Wire Line
+	4700 3400 4800 3400
+Text HLabel 2500 4000 0    60   Input ~ 0
+AC1
+$Comp
+L D D202
+U 1 1 57C6E13D
+P 2750 4000
+AR Path="/57C6D5E2/57C6E13D" Ref="D202"  Part="1" 
+AR Path="/57C72927/57C6E13D" Ref="D302"  Part="1" 
+F 0 "D302" H 2750 4100 50  0000 C CNN
+F 1 "1N4148" H 2750 3900 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 2750 4000 60  0001 C CNN
+F 3 "" H 2750 4000 60  0000 C CNN
+	1    2750 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D201
+U 1 1 57C6E1BC
+P 2750 3700
+AR Path="/57C6D5E2/57C6E1BC" Ref="D201"  Part="1" 
+AR Path="/57C72927/57C6E1BC" Ref="D301"  Part="1" 
+F 0 "D301" H 2750 3800 50  0000 C CNN
+F 1 "1N4148" H 2750 3600 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" H 2750 3700 60  0001 C CNN
+F 3 "" H 2750 3700 60  0000 C CNN
+	1    2750 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 4000 2600 4000
+Wire Wire Line
+	2500 3700 2600 3700
+Wire Wire Line
+	2900 3700 3000 3700
+Wire Wire Line
+	3000 3700 3000 4000
+Wire Wire Line
+	2900 4000 3100 4000
+$Comp
+L R R201
+U 1 1 57C6E34E
+P 3250 4000
+AR Path="/57C6D5E2/57C6E34E" Ref="R201"  Part="1" 
+AR Path="/57C72927/57C6E34E" Ref="R301"  Part="1" 
+F 0 "R301" V 3330 4000 50  0000 C CNN
+F 1 "22k" V 3250 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3180 4000 30  0001 C CNN
+F 3 "" H 3250 4000 30  0000 C CNN
+	1    3250 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R202
+U 1 1 57C6E3A5
+P 3500 4250
+AR Path="/57C6D5E2/57C6E3A5" Ref="R202"  Part="1" 
+AR Path="/57C72927/57C6E3A5" Ref="R302"  Part="1" 
+F 0 "R302" V 3580 4250 50  0000 C CNN
+F 1 "1k" V 3500 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3430 4250 30  0001 C CNN
+F 3 "" H 3500 4250 30  0000 C CNN
+	1    3500 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L BC850 Q201
+U 1 1 57C6E3F0
+P 3800 4000
+AR Path="/57C6D5E2/57C6E3F0" Ref="Q201"  Part="1" 
+AR Path="/57C72927/57C6E3F0" Ref="Q301"  Part="1" 
+F 0 "Q301" H 4000 4075 50  0000 L CNN
+F 1 "BC850" H 4000 4000 50  0000 L CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 4000 3925 50  0001 L CIN
+F 3 "" H 3800 4000 50  0000 L CNN
+	1    3800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R203
+U 1 1 57C6E44C
+P 3900 2850
+AR Path="/57C6D5E2/57C6E44C" Ref="R203"  Part="1" 
+AR Path="/57C72927/57C6E44C" Ref="R303"  Part="1" 
+F 0 "R303" V 3980 2850 50  0000 C CNN
+F 1 "22k" V 3900 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3830 2850 30  0001 C CNN
+F 3 "" H 3900 2850 30  0000 C CNN
+	1    3900 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L BC850 Q202
+U 1 1 57C6E4EF
+P 4200 3100
+AR Path="/57C6D5E2/57C6E4EF" Ref="Q202"  Part="1" 
+AR Path="/57C72927/57C6E4EF" Ref="Q302"  Part="1" 
+F 0 "Q302" H 4400 3175 50  0000 L CNN
+F 1 "BC850" H 4400 3100 50  0000 L CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 4400 3025 50  0001 L CIN
+F 3 "" H 4200 3100 50  0000 L CNN
+	1    4200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC858 Q203
+U 1 1 57C6E540
+P 4200 3700
+AR Path="/57C6D5E2/57C6E540" Ref="Q203"  Part="1" 
+AR Path="/57C72927/57C6E540" Ref="Q303"  Part="1" 
+F 0 "Q303" H 4400 3775 50  0000 L CNN
+F 1 "BC860" H 4400 3700 50  0000 L CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" H 4400 3625 50  0001 L CIN
+F 3 "" H 4200 3700 50  0000 L CNN
+	1    4200 3700
+	1    0    0    1   
+$EndComp
+Text HLabel 2500 2600 0    60   Input ~ 0
+V+
+Text HLabel 2500 4500 0    60   Input ~ 0
+V-
+Wire Wire Line
+	2500 4500 4300 4500
+Wire Wire Line
+	4300 4500 4300 3900
+Wire Wire Line
+	3900 4200 3900 4500
+Connection ~ 3900 4500
+Wire Wire Line
+	3500 4400 3500 4500
+Connection ~ 3500 4500
+Wire Wire Line
+	3400 4000 3600 4000
+Wire Wire Line
+	3500 4100 3500 4000
+Connection ~ 3500 4000
+Connection ~ 3000 4000
+Wire Wire Line
+	3900 3000 3900 3800
+Wire Wire Line
+	4000 3100 3900 3100
+Connection ~ 3900 3100
+Wire Wire Line
+	4000 3700 3900 3700
+Connection ~ 3900 3700
+Wire Wire Line
+	2500 2600 4300 2600
+Wire Wire Line
+	3900 2600 3900 2700
+Wire Wire Line
+	4300 3300 4300 3500
+Wire Wire Line
+	4400 3400 4300 3400
+Connection ~ 4300 3400
+Wire Wire Line
+	4300 2600 4300 2900
+Connection ~ 3900 2600
+$EndSCHEMATC

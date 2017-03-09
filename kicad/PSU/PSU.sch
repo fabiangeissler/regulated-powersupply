@@ -1,0 +1,873 @@
+EESchema Schematic File Version 2
+LIBS:PSU-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:PSU-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Diode_Bridge-RESCUE-PSU D101
+U 1 1 57ADCEB6
+P 2100 2100
+F 0 "D101" H 2100 2150 50  0000 C CNN
+F 1 "Diode_Bridge" H 2100 2050 50  0000 C CNN
+F 2 "bridge_rectifier:WOG" H 2100 2100 60  0001 C CNN
+F 3 "" H 2100 2100 60  0000 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C101
+U 1 1 57ADCEB7
+P 3000 2500
+F 0 "C101" H 3025 2600 50  0000 L CNN
+F 1 "4700u" H 3025 2400 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_31.5x16mm_RM7.5_CopperClear" H 3038 2350 30  0001 C CNN
+F 3 "" H 3000 2500 60  0000 C CNN
+	1    3000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D103
+U 1 1 57ADCEB8
+P 8600 1450
+F 0 "D103" H 8600 1550 50  0000 C CNN
+F 1 "1N4007" H 8600 1350 50  0000 C CNN
+F 2 "Diodes_SMD:MELF_Standard" H 8600 1450 60  0001 C CNN
+F 3 "" H 8600 1450 60  0000 C CNN
+	1    8600 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C103
+U 1 1 57ADCEBA
+P 9000 1550
+F 0 "C103" H 9025 1650 50  0000 L CNN
+F 1 "1000u" H 9025 1450 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 9038 1400 30  0001 C CNN
+F 3 "" H 9000 1550 60  0000 C CNN
+	1    9000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C104
+U 1 1 57ADCEBB
+P 9000 2250
+F 0 "C104" H 9025 2350 50  0000 L CNN
+F 1 "100u" H 9025 2150 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x6.3mm_RM2.5_CopperClear" H 9038 2100 30  0001 C CNN
+F 3 "" H 9000 2250 60  0000 C CNN
+	1    9000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C107
+U 1 1 57ADCEBC
+P 9400 1550
+F 0 "C107" H 9425 1650 50  0000 L CNN
+F 1 "100n" H 9425 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9438 1400 30  0001 C CNN
+F 3 "" H 9400 1550 60  0000 C CNN
+	1    9400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C111
+U 1 1 57ADCEBD
+P 10400 1550
+F 0 "C111" H 10425 1650 50  0000 L CNN
+F 1 "100n" H 10425 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10438 1400 30  0001 C CNN
+F 3 "" H 10400 1550 60  0000 C CNN
+	1    10400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C108
+U 1 1 57ADCEBE
+P 9400 2250
+F 0 "C108" H 9425 2350 50  0000 L CNN
+F 1 "100n" H 9425 2150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9438 2100 30  0001 C CNN
+F 3 "" H 9400 2250 60  0000 C CNN
+	1    9400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C112
+U 1 1 57ADCEBF
+P 10400 2250
+F 0 "C112" H 10425 2350 50  0000 L CNN
+F 1 "100n" H 10425 2150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10438 2100 30  0001 C CNN
+F 3 "" H 10400 2250 60  0000 C CNN
+	1    10400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805-SOT-89 U101
+U 1 1 57ADCEC0
+P 9900 1250
+F 0 "U101" H 10050 1054 60  0000 C CNN
+F 1 "7805-SOT-89" H 9900 1450 60  0000 C CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 9900 1250 60  0001 C CNN
+F 3 "" H 9900 1250 60  0000 C CNN
+	1    9900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7905-SOT-89 U102
+U 1 1 57ADCEC1
+P 9900 2550
+F 0 "U102" H 10050 2355 60  0000 C CNN
+F 1 "7905-SOT-89" H 9900 2750 60  0000 C CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 9900 2550 60  0001 C CNN
+F 3 "" H 9900 2550 60  0000 C CNN
+	1    9900 2550
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P102
+U 1 1 57ADD0ED
+P 900 3100
+F 0 "P102" H 900 3200 50  0000 C CNN
+F 1 "TR1B" V 1000 3100 50  0000 C CNN
+F 2 "faston_connector:FASTON-4.8" H 900 3100 60  0001 C CNN
+F 3 "" H 900 3100 60  0000 C CNN
+	1    900  3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P101
+U 1 1 57ADD14A
+P 900 1300
+F 0 "P101" H 900 1400 50  0000 C CNN
+F 1 "TR1A" V 1000 1300 50  0000 C CNN
+F 2 "faston_connector:FASTON-4.8" H 900 1300 60  0001 C CNN
+F 3 "" H 900 1300 60  0000 C CNN
+	1    900  1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L TRANSFO2 T101
+U 1 1 57ADD663
+P 6600 2900
+F 0 "T101" H 6600 3400 50  0000 C CNN
+F 1 "2x6VAC 4.8W" H 6600 2400 50  0000 C CNN
+F 2 "Transformer:GERTH4600" H 6600 2900 60  0001 C CNN
+F 3 "" H 6600 2900 60  0000 C CNN
+	1    6600 2900
+	1    0    0    -1  
+$EndComp
+Text Label 3500 1100 0    60   ~ 0
+V+1
+Text Label 3500 1600 0    60   ~ 0
+V-1
+Wire Wire Line
+	1900 1300 2100 1300
+Wire Wire Line
+	2100 1300 2100 1400
+Wire Wire Line
+	3000 2650 3000 2900
+Wire Wire Line
+	2800 2100 3400 2100
+Wire Wire Line
+	3000 2100 3000 2350
+Wire Wire Line
+	1100 3100 2100 3100
+Wire Wire Line
+	2100 3100 2100 2800
+Wire Wire Line
+	1400 2100 1300 2100
+Wire Wire Line
+	1300 2100 1300 2900
+Wire Wire Line
+	1300 2900 3400 2900
+Wire Wire Line
+	8600 1600 8600 2200
+Wire Wire Line
+	7400 1900 10700 1900
+Wire Wire Line
+	9000 1700 9000 2100
+Connection ~ 9000 1900
+Wire Wire Line
+	8600 1300 8600 1200
+Wire Wire Line
+	8600 1200 9500 1200
+Wire Wire Line
+	9000 1200 9000 1400
+Wire Wire Line
+	8600 2500 8600 2500
+Wire Wire Line
+	8600 2600 9500 2600
+Wire Wire Line
+	9400 2400 9400 2600
+Wire Wire Line
+	9400 1700 9400 2100
+Connection ~ 9400 1900
+Connection ~ 9000 1200
+Wire Wire Line
+	9400 1400 9400 1200
+Connection ~ 9400 1200
+Wire Wire Line
+	10300 1200 10700 1200
+Wire Wire Line
+	10400 1200 10400 1400
+Wire Wire Line
+	10400 1700 10400 2100
+Connection ~ 10400 1900
+Wire Wire Line
+	10300 2600 10700 2600
+Wire Wire Line
+	10400 2600 10400 2400
+Wire Wire Line
+	9900 1500 9900 2300
+Connection ~ 9900 1900
+Connection ~ 10400 1200
+Connection ~ 10400 2600
+Connection ~ 3000 2100
+Connection ~ 3000 2900
+Text Label 5200 1100 2    60   ~ 0
+V-1
+Text Label 5200 1600 2    60   ~ 0
+V-1-3V3
+$Comp
+L Diode_Bridge-RESCUE-PSU D102
+U 1 1 57ADF987
+P 2100 4800
+F 0 "D102" H 2100 4850 50  0000 C CNN
+F 1 "Diode_Bridge" H 2100 4750 50  0000 C CNN
+F 2 "bridge_rectifier:WOG" H 2100 4800 60  0001 C CNN
+F 3 "" H 2100 4800 60  0000 C CNN
+	1    2100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C102
+U 1 1 57ADF98D
+P 3000 5200
+F 0 "C102" H 3025 5300 50  0000 L CNN
+F 1 "4700u" H 3025 5100 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_31.5x16mm_RM7.5_CopperClear" H 3038 5050 30  0001 C CNN
+F 3 "" H 3000 5200 60  0000 C CNN
+	1    3000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P104
+U 1 1 57ADF9AB
+P 900 5800
+F 0 "P104" H 900 5900 50  0000 C CNN
+F 1 "TR2B" V 1000 5800 50  0000 C CNN
+F 2 "faston_connector:FASTON-4.8" H 900 5800 60  0001 C CNN
+F 3 "" H 900 5800 60  0000 C CNN
+	1    900  5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P103
+U 1 1 57ADF9B1
+P 900 4000
+F 0 "P103" H 900 4100 50  0000 C CNN
+F 1 "TR2A" V 1000 4000 50  0000 C CNN
+F 2 "faston_connector:FASTON-4.8" H 900 4000 60  0001 C CNN
+F 3 "" H 900 4000 60  0000 C CNN
+	1    900  4000
+	-1   0    0    1   
+$EndComp
+Text Label 3400 4800 2    60   ~ 0
+V+2
+Text Label 3400 5600 2    60   ~ 0
+V-2
+Wire Wire Line
+	1900 4000 2100 4000
+Wire Wire Line
+	2100 4000 2100 4100
+Wire Wire Line
+	3000 5350 3000 5600
+Wire Wire Line
+	2800 4800 3400 4800
+Wire Wire Line
+	3000 4800 3000 5050
+Wire Wire Line
+	1100 5800 2100 5800
+Wire Wire Line
+	2100 5800 2100 5500
+Wire Wire Line
+	1400 4800 1300 4800
+Wire Wire Line
+	1300 4800 1300 5600
+Wire Wire Line
+	1300 5600 3400 5600
+Connection ~ 3000 4800
+Connection ~ 3000 5600
+$Comp
+L FUSE F102
+U 1 1 57ADFF3F
+P 1650 4000
+F 0 "F102" H 1650 4100 50  0000 C CNN
+F 1 "T1A" H 1650 3900 50  0000 C CNN
+F 2 "fuse_holder:fuse_5x20" H 1650 4000 60  0001 C CNN
+F 3 "" H 1650 4000 60  0000 C CNN
+	1    1650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4000 1100 4000
+$Comp
+L FUSE F101
+U 1 1 57AE028F
+P 1650 1300
+F 0 "F101" H 1650 1400 50  0000 C CNN
+F 1 "T1A" H 1650 1200 50  0000 C CNN
+F 2 "fuse_holder:fuse_5x20" H 1650 1300 60  0001 C CNN
+F 3 "" H 1650 1300 60  0000 C CNN
+	1    1650 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1300 1100 1300
+Wire Wire Line
+	7000 2800 7400 2800
+Wire Wire Line
+	7400 2800 7400 1900
+$Comp
+L D D105
+U 1 1 57AE2347
+P 8600 3450
+F 0 "D105" H 8600 3550 50  0000 C CNN
+F 1 "1N4007" H 8600 3350 50  0000 C CNN
+F 2 "Diodes_SMD:MELF_Standard" H 8600 3450 60  0001 C CNN
+F 3 "" H 8600 3450 60  0000 C CNN
+	1    8600 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L D D106
+U 1 1 57AE234D
+P 8600 4350
+F 0 "D106" H 8600 4450 50  0000 C CNN
+F 1 "1N4007" H 8600 4250 50  0000 C CNN
+F 2 "Diodes_SMD:MELF_Standard" H 8600 4350 60  0001 C CNN
+F 3 "" H 8600 4350 60  0000 C CNN
+	1    8600 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C105
+U 1 1 57AE2353
+P 9000 3550
+F 0 "C105" H 9025 3650 50  0000 L CNN
+F 1 "1000u" H 9025 3450 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_20x10mm_RM5_CopperClear" H 9038 3400 30  0001 C CNN
+F 3 "" H 9000 3550 60  0000 C CNN
+	1    9000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C106
+U 1 1 57AE2359
+P 9000 4250
+F 0 "C106" H 9025 4350 50  0000 L CNN
+F 1 "100u" H 9025 4150 50  0000 L CNN
+F 2 "Capacitors_Elko_ThroughHole:Elko_vert_11.2x6.3mm_RM2.5_CopperClear" H 9038 4100 30  0001 C CNN
+F 3 "" H 9000 4250 60  0000 C CNN
+	1    9000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C109
+U 1 1 57AE2362
+P 9400 3550
+F 0 "C109" H 9425 3650 50  0000 L CNN
+F 1 "100n" H 9425 3450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9438 3400 30  0001 C CNN
+F 3 "" H 9400 3550 60  0000 C CNN
+	1    9400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C113
+U 1 1 57AE2368
+P 10400 3550
+F 0 "C113" H 10425 3650 50  0000 L CNN
+F 1 "100n" H 10425 3450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10438 3400 30  0001 C CNN
+F 3 "" H 10400 3550 60  0000 C CNN
+	1    10400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C110
+U 1 1 57AE236E
+P 9400 4250
+F 0 "C110" H 9425 4350 50  0000 L CNN
+F 1 "100n" H 9425 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9438 4100 30  0001 C CNN
+F 3 "" H 9400 4250 60  0000 C CNN
+	1    9400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C114
+U 1 1 57AE2374
+P 10400 4250
+F 0 "C114" H 10425 4350 50  0000 L CNN
+F 1 "100n" H 10425 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10438 4100 30  0001 C CNN
+F 3 "" H 10400 4250 60  0000 C CNN
+	1    10400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805-SOT-89 U103
+U 1 1 57AE237A
+P 9900 3250
+F 0 "U103" H 10050 3054 60  0000 C CNN
+F 1 "7805-SOT-89" H 9900 3450 60  0000 C CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 9900 3250 60  0001 C CNN
+F 3 "" H 9900 3250 60  0000 C CNN
+	1    9900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7905-SOT-89 U104
+U 1 1 57AE2380
+P 9900 4550
+F 0 "U104" H 10050 4355 60  0000 C CNN
+F 1 "7905-SOT-89" H 9900 4750 60  0000 C CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 9900 4550 60  0001 C CNN
+F 3 "" H 9900 4550 60  0000 C CNN
+	1    9900 4550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8600 3600 8600 4200
+Wire Wire Line
+	7100 3900 10700 3900
+Wire Wire Line
+	9000 3700 9000 4100
+Connection ~ 9000 3900
+Wire Wire Line
+	8600 3300 8600 3200
+Wire Wire Line
+	8600 3200 9500 3200
+Wire Wire Line
+	9000 3200 9000 3400
+Wire Wire Line
+	8600 4500 8600 4600
+Wire Wire Line
+	8600 4600 9500 4600
+Wire Wire Line
+	9000 4600 9000 4400
+Connection ~ 9000 4600
+Wire Wire Line
+	9400 4400 9400 4600
+Connection ~ 9400 4600
+Wire Wire Line
+	9400 3700 9400 4100
+Connection ~ 9400 3900
+Connection ~ 9000 3200
+Wire Wire Line
+	9400 3400 9400 3200
+Connection ~ 9400 3200
+Wire Wire Line
+	10300 3200 10700 3200
+Wire Wire Line
+	10400 3200 10400 3400
+Wire Wire Line
+	10400 3700 10400 4100
+Connection ~ 10400 3900
+Wire Wire Line
+	10300 4600 10700 4600
+Wire Wire Line
+	10400 4600 10400 4400
+Wire Wire Line
+	9900 3500 9900 4300
+Connection ~ 9900 3900
+Connection ~ 10400 3200
+Connection ~ 10400 4600
+$Comp
+L FUSE F103
+U 1 1 57AE256C
+P 8150 1700
+F 0 "F103" H 8150 1800 50  0000 C CNN
+F 1 "F400mA" H 8150 1600 50  0000 C CNN
+F 2 "fuse_holder:fuse_5x20" H 8150 1700 60  0001 C CNN
+F 3 "" H 8150 1700 60  0000 C CNN
+	1    8150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F104
+U 1 1 57AE2736
+P 8150 3700
+F 0 "F104" H 8150 3800 50  0000 C CNN
+F 1 "F400mA" H 8150 3600 50  0000 C CNN
+F 2 "fuse_holder:fuse_5x20" H 8150 3700 60  0001 C CNN
+F 3 "" H 8150 3700 60  0000 C CNN
+	1    8150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1700 8400 1700
+Connection ~ 8600 1700
+Wire Wire Line
+	7900 1700 7100 1700
+Wire Wire Line
+	7100 1700 7100 2500
+Wire Wire Line
+	7100 2500 7000 2500
+Wire Wire Line
+	8600 3700 8400 3700
+Connection ~ 8600 3700
+Wire Wire Line
+	7900 3700 7400 3700
+Wire Wire Line
+	7400 3700 7400 3000
+Wire Wire Line
+	7400 3000 7000 3000
+Wire Wire Line
+	7000 3300 7100 3300
+Wire Wire Line
+	7100 3300 7100 3900
+$Comp
+L CONN_01X01 P109
+U 1 1 57AE3ADA
+P 5900 3100
+F 0 "P109" H 5900 3200 50  0000 C CNN
+F 1 "TRD" V 6000 3100 50  0000 C CNN
+F 2 "faston_connector:FASTON-4.8" H 5900 3100 60  0001 C CNN
+F 3 "" H 5900 3100 60  0000 C CNN
+	1    5900 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P108
+U 1 1 57AE3C0F
+P 5900 2700
+F 0 "P108" H 5900 2800 50  0000 C CNN
+F 1 "TRC" V 6000 2700 50  0000 C CNN
+F 2 "faston_connector:FASTON-4.8" H 5900 2700 60  0001 C CNN
+F 3 "" H 5900 2700 60  0000 C CNN
+	1    5900 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 2700 6100 2700
+Wire Wire Line
+	6200 3100 6100 3100
+Text Label 10700 1200 2    60   ~ 0
++5V1
+Text Label 10700 1900 2    60   ~ 0
+GND1
+Text Label 10700 2600 2    60   ~ 0
+-5V1
+Text Label 10700 4600 2    60   ~ 0
+-5V2
+Text Label 10700 3200 2    60   ~ 0
++5V2
+Text Label 10700 3900 2    60   ~ 0
+GND2
+$Comp
+L D D104
+U 1 1 57ADCEB9
+P 8600 2350
+F 0 "D104" H 8600 2450 50  0000 C CNN
+F 1 "1N4007" H 8600 2250 50  0000 C CNN
+F 2 "Diodes_SMD:MELF_Standard" H 8600 2350 60  0001 C CNN
+F 3 "" H 8600 2350 60  0000 C CNN
+	1    8600 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 2600 8600 2500
+Connection ~ 9400 2600
+Wire Wire Line
+	9000 2400 9000 2600
+Connection ~ 9000 2600
+$Comp
+L CONN_01X06 P112
+U 1 1 57AE715A
+P 6400 7050
+F 0 "P112" H 6400 7400 50  0000 C CNN
+F 1 "Reg2" V 6500 7050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 6400 7050 60  0001 C CNN
+F 3 "" H 6400 7050 60  0000 C CNN
+	1    6400 7050
+	1    0    0    -1  
+$EndComp
+Text Label 5600 7100 0    60   ~ 0
+V+2
+Text Label 5600 7200 0    60   ~ 0
+V-2
+Text Label 5600 7300 0    60   ~ 0
+V-2-3V3
+Text Label 5600 6800 0    60   ~ 0
++5V2
+Text Label 5600 7000 0    60   ~ 0
+-5V2
+Text Label 5600 6900 0    60   ~ 0
+GND2
+Wire Wire Line
+	6200 7100 5600 7100
+Wire Wire Line
+	5600 7200 6200 7200
+Wire Wire Line
+	6200 7300 5600 7300
+Wire Wire Line
+	5600 6800 6200 6800
+Wire Wire Line
+	6200 6900 5600 6900
+Wire Wire Line
+	5600 7000 6200 7000
+$Comp
+L CONN_01X06 P107
+U 1 1 57AE980A
+P 5200 7050
+F 0 "P107" H 5200 7400 50  0000 C CNN
+F 1 "Reg1" V 5300 7050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 5200 7050 60  0001 C CNN
+F 3 "" H 5200 7050 60  0000 C CNN
+	1    5200 7050
+	1    0    0    -1  
+$EndComp
+Text Label 4400 7100 0    60   ~ 0
+V+1
+Text Label 4400 7200 0    60   ~ 0
+V-1
+Text Label 4400 7300 0    60   ~ 0
+V-1-3V3
+Text Label 4400 6800 0    60   ~ 0
++5V1
+Text Label 4400 7000 0    60   ~ 0
+-5V1
+Text Label 4400 6900 0    60   ~ 0
+GND1
+Wire Wire Line
+	5000 7100 4400 7100
+Wire Wire Line
+	4400 7200 5000 7200
+Wire Wire Line
+	5000 7300 4400 7300
+Wire Wire Line
+	4400 6800 5000 6800
+Wire Wire Line
+	5000 6900 4400 6900
+Wire Wire Line
+	4400 7000 5000 7000
+$Comp
+L CONN_01X03 P111
+U 1 1 57AEB270
+P 6400 6400
+F 0 "P111" H 6400 6600 50  0000 C CNN
+F 1 "Disp2" V 6500 6400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6400 6400 60  0001 C CNN
+F 3 "" H 6400 6400 60  0000 C CNN
+	1    6400 6400
+	1    0    0    -1  
+$EndComp
+Text Label 8600 1200 0    60   ~ 0
++8V1
+Text Label 8600 3200 0    60   ~ 0
++8V2
+Text Label 5600 6300 0    60   ~ 0
++8V2
+Text Label 5600 6400 0    60   ~ 0
++5V2
+Text Label 5600 6500 0    60   ~ 0
+GND2
+Text Label 4400 6300 0    60   ~ 0
++8V1
+Text Label 4400 6400 0    60   ~ 0
++5V1
+Text Label 4400 6500 0    60   ~ 0
+GND1
+$Comp
+L CONN_01X03 P106
+U 1 1 57AEC1C6
+P 5200 6400
+F 0 "P106" H 5200 6600 50  0000 C CNN
+F 1 "Disp1" V 5300 6400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 5200 6400 60  0001 C CNN
+F 3 "" H 5200 6400 60  0000 C CNN
+	1    5200 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6300 5600 6300
+Wire Wire Line
+	5000 6300 4400 6300
+Wire Wire Line
+	4400 6400 5000 6400
+Wire Wire Line
+	5000 6500 4400 6500
+Wire Wire Line
+	5600 6400 6200 6400
+Wire Wire Line
+	6200 6500 5600 6500
+$Comp
+L CONN_01X02 P110
+U 1 1 57C31855
+P 6400 5950
+F 0 "P110" H 6400 6100 50  0000 C CNN
+F 1 "Reg22" V 6500 5950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6400 5950 60  0001 C CNN
+F 3 "" H 6400 5950 60  0000 C CNN
+	1    6400 5950
+	1    0    0    -1  
+$EndComp
+Text Label 2100 4000 0    60   ~ 0
+VAC21
+Text Label 2100 5800 0    60   ~ 0
+VAC22
+Text Label 3500 1300 0    60   ~ 0
+VAC12
+Text Label 3500 1400 0    60   ~ 0
+VAC11
+Text Label 5600 5900 0    60   ~ 0
+VAC21
+Text Label 5600 6000 0    60   ~ 0
+VAC22
+Wire Wire Line
+	6200 5900 5600 5900
+Wire Wire Line
+	5600 6000 6200 6000
+$Comp
+L R R102
+U 1 1 57C36E6D
+P 3400 5200
+F 0 "R102" V 3480 5200 50  0000 C CNN
+F 1 "10k" V 3400 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3330 5200 30  0001 C CNN
+F 3 "" H 3400 5200 30  0000 C CNN
+	1    3400 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 4800 3400 5050
+Wire Wire Line
+	3400 5600 3400 5350
+$Comp
+L R R101
+U 1 1 57C3728F
+P 3400 2500
+F 0 "R101" V 3480 2500 50  0000 C CNN
+F 1 "10k" V 3400 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3330 2500 30  0001 C CNN
+F 3 "" H 3400 2500 30  0000 C CNN
+	1    3400 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 2100 3400 2350
+Wire Wire Line
+	3400 2900 3400 2650
+$Sheet
+S 3900 1000 800  700 
+U 57C6D5E2
+F0 "NegativePump1" 60
+F1 "NegativePump.sch" 60
+F2 "+" I R 4700 1100 60 
+F3 "-" I R 4700 1600 60 
+F4 "AC2" I L 3900 1300 60 
+F5 "AC1" I L 3900 1400 60 
+F6 "V+" I L 3900 1100 60 
+F7 "V-" I L 3900 1600 60 
+$EndSheet
+Wire Wire Line
+	5200 1100 4700 1100
+Wire Wire Line
+	5200 1600 4700 1600
+Wire Wire Line
+	3900 1100 3500 1100
+Wire Wire Line
+	3900 1300 3500 1300
+Wire Wire Line
+	3500 1400 3900 1400
+Wire Wire Line
+	3900 1600 3500 1600
+Text Label 3500 3800 0    60   ~ 0
+V+2
+Text Label 3500 4300 0    60   ~ 0
+V-2
+Text Label 5200 3800 2    60   ~ 0
+V-2
+Text Label 5200 4300 2    60   ~ 0
+V-2-3V3
+Text Label 3500 4000 0    60   ~ 0
+VAC22
+Text Label 3500 4100 0    60   ~ 0
+VAC21
+$Sheet
+S 3900 3700 800  700 
+U 57C72927
+F0 "NegativePump2" 60
+F1 "NegativePump.sch" 60
+F2 "+" I R 4700 3800 60 
+F3 "-" I R 4700 4300 60 
+F4 "AC2" I L 3900 4000 60 
+F5 "AC1" I L 3900 4100 60 
+F6 "V+" I L 3900 3800 60 
+F7 "V-" I L 3900 4300 60 
+$EndSheet
+Wire Wire Line
+	5200 3800 4700 3800
+Wire Wire Line
+	5200 4300 4700 4300
+Wire Wire Line
+	3900 3800 3500 3800
+Wire Wire Line
+	3900 4000 3500 4000
+Wire Wire Line
+	3500 4100 3900 4100
+Wire Wire Line
+	3900 4300 3500 4300
+Text Label 2100 3100 0    60   ~ 0
+VAC12
+Text Label 2100 1300 0    60   ~ 0
+VAC11
+Text Label 3400 2100 2    60   ~ 0
+V+1
+Text Label 3400 2900 2    60   ~ 0
+V-1
+$EndSCHEMATC

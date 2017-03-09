@@ -1,0 +1,500 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:analog_devices
+LIBS:bridge_rectifier
+LIBS:caf
+LIBS:chokes
+LIBS:cirrus logic
+LIBS:eeprom
+LIBS:ft232rl
+LIBS:international_rectifier
+LIBS:linear_technology
+LIBS:maxim_integrated
+LIBS:Microchip
+LIBS:NXP Semiconductor
+LIBS:relais
+LIBS:SigmaDSP
+LIBS:stm32
+LIBS:taiwan_semiconductor
+LIBS:texas_instruments
+LIBS:toslink
+LIBS:Panel-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ULN2803 U201
+U 1 1 57B4DF58
+P 2100 6800
+F 0 "U201" H 2100 7400 60  0000 C CNN
+F 1 "ULN2803" H 2100 6200 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-18_7.5x11.6mm_Pitch1.27mm" H 1750 6800 60  0001 C CNN
+F 3 "" H 1750 6800 60  0000 C CNN
+	1    2100 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CC56-12 AFF201
+U 1 1 57B4DF5F
+P 3400 5600
+F 0 "AFF201" H 3400 6350 50  0000 C CNN
+F 1 "Disp U" H 3400 6250 50  0000 C CNN
+F 2 "Displays_7-Segment:Cx56-12" H 2900 5600 60  0001 C CNN
+F 3 "" H 2900 5600 60  0000 C CNN
+	1    3400 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L CC56-12 AFF202
+U 1 1 57B4DF66
+P 5700 5600
+F 0 "AFF202" H 5700 6350 50  0000 C CNN
+F 1 "Disp I" H 5700 6250 50  0000 C CNN
+F 2 "Displays_7-Segment:Cx56-12" H 5200 5600 60  0001 C CNN
+F 3 "" H 5200 5600 60  0000 C CNN
+	1    5700 5600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 6400 2700 6400
+Wire Wire Line
+	2700 6400 2700 6300
+Wire Wire Line
+	2600 6500 3200 6500
+Wire Wire Line
+	3200 6500 3200 6300
+Wire Wire Line
+	2600 6600 3700 6600
+Wire Wire Line
+	3700 6600 3700 6300
+Wire Wire Line
+	2600 6700 4200 6700
+Wire Wire Line
+	4200 6700 4200 6300
+Wire Wire Line
+	2600 6800 5000 6800
+Wire Wire Line
+	5000 6800 5000 6300
+Wire Wire Line
+	2600 6900 5500 6900
+Wire Wire Line
+	5500 6900 5500 6300
+Wire Wire Line
+	2600 7000 6000 7000
+Wire Wire Line
+	6000 7000 6000 6300
+Wire Wire Line
+	2600 7100 6500 7100
+Wire Wire Line
+	6500 7100 6500 6300
+Wire Wire Line
+	6100 1900 6100 4900
+Wire Wire Line
+	5700 1700 5700 1800
+Wire Wire Line
+	5700 1800 6000 1800
+Wire Wire Line
+	6000 2200 6000 4900
+Wire Wire Line
+	5300 2000 5300 2100
+Wire Wire Line
+	5300 2100 5900 2100
+Wire Wire Line
+	5900 2500 5900 4900
+Wire Wire Line
+	4900 2300 4900 2400
+Wire Wire Line
+	4900 2400 5800 2400
+Wire Wire Line
+	5800 2800 5800 4900
+Wire Wire Line
+	4500 2600 4500 2700
+Wire Wire Line
+	4500 2700 5700 2700
+Wire Wire Line
+	5700 3100 5700 4900
+Wire Wire Line
+	4100 2900 4100 3000
+Wire Wire Line
+	4100 3000 5600 3000
+Wire Wire Line
+	5600 3400 5600 4900
+Wire Wire Line
+	3700 3200 3700 3300
+Wire Wire Line
+	3700 3300 5500 3300
+Wire Wire Line
+	5500 3700 5500 4900
+Wire Wire Line
+	3300 3500 3300 3600
+Wire Wire Line
+	3300 3600 5400 3600
+Wire Wire Line
+	5400 4000 5400 4900
+Wire Wire Line
+	3800 4900 3800 4800
+Wire Wire Line
+	3800 4800 6100 4800
+Connection ~ 6100 4800
+Wire Wire Line
+	3700 4900 3700 4700
+Wire Wire Line
+	3700 4700 6000 4700
+Connection ~ 6000 4700
+Wire Wire Line
+	3600 4900 3600 4600
+Wire Wire Line
+	3600 4600 5900 4600
+Connection ~ 5900 4600
+Wire Wire Line
+	3500 4900 3500 4500
+Wire Wire Line
+	3500 4500 5800 4500
+Connection ~ 5800 4500
+Wire Wire Line
+	3400 4900 3400 4400
+Wire Wire Line
+	3400 4400 5700 4400
+Connection ~ 5700 4400
+Wire Wire Line
+	3300 4900 3300 4300
+Wire Wire Line
+	3300 4300 5600 4300
+Connection ~ 5600 4300
+Wire Wire Line
+	3200 4900 3200 4200
+Wire Wire Line
+	3200 4200 5500 4200
+Connection ~ 5500 4200
+Wire Wire Line
+	3100 4900 3100 4100
+Wire Wire Line
+	3100 4100 5400 4100
+Connection ~ 5400 4100
+Wire Wire Line
+	3300 3100 3300 900 
+Wire Wire Line
+	2800 900  6100 900 
+Wire Wire Line
+	6100 900  6100 1000
+Wire Wire Line
+	5700 1300 5700 900 
+Connection ~ 5700 900 
+Wire Wire Line
+	5300 1600 5300 900 
+Connection ~ 5300 900 
+Wire Wire Line
+	4900 1900 4900 900 
+Connection ~ 4900 900 
+Wire Wire Line
+	4500 2200 4500 900 
+Connection ~ 4500 900 
+Wire Wire Line
+	4100 2500 4100 900 
+Connection ~ 4100 900 
+Wire Wire Line
+	3700 2800 3700 900 
+Connection ~ 3700 900 
+Text HLabel 2800 900  0    60   Input ~ 0
+V+
+Text HLabel 1400 7200 0    60   Input ~ 0
+GND
+Text HLabel 1400 7100 0    60   Input ~ 0
+DIG0
+Text HLabel 1400 7000 0    60   Input ~ 0
+DIG1
+Text HLabel 1400 6900 0    60   Input ~ 0
+DIG2
+Text HLabel 1400 6800 0    60   Input ~ 0
+DIG3
+Text HLabel 1400 6700 0    60   Input ~ 0
+DIG4
+Text HLabel 1400 6600 0    60   Input ~ 0
+DIG5
+Text HLabel 1400 6500 0    60   Input ~ 0
+DIG6
+Text HLabel 1400 6400 0    60   Input ~ 0
+DIG7
+Connection ~ 3300 900 
+Text HLabel 2800 1200 0    60   Input ~ 0
+SEGPT
+Text HLabel 2800 1500 0    60   Input ~ 0
+SEGG
+Text HLabel 2800 1800 0    60   Input ~ 0
+SEGF
+Text HLabel 2800 2100 0    60   Input ~ 0
+SEGE
+Text HLabel 2800 2400 0    60   Input ~ 0
+SEGD
+Text HLabel 2800 2700 0    60   Input ~ 0
+SEGC
+Text HLabel 2800 3000 0    60   Input ~ 0
+SEGB
+Text HLabel 2800 3300 0    60   Input ~ 0
+SEGA
+Wire Wire Line
+	2800 1200 5800 1200
+Wire Wire Line
+	5400 1500 2800 1500
+Wire Wire Line
+	5000 1800 2800 1800
+Wire Wire Line
+	2800 2100 4600 2100
+Wire Wire Line
+	4200 2400 2800 2400
+Wire Wire Line
+	3800 2700 2800 2700
+Wire Wire Line
+	3400 3000 2800 3000
+Wire Wire Line
+	3000 3300 2800 3300
+Wire Wire Line
+	1400 6400 1600 6400
+Wire Wire Line
+	1600 6500 1400 6500
+Wire Wire Line
+	1400 6600 1600 6600
+Wire Wire Line
+	1600 6700 1400 6700
+Wire Wire Line
+	1400 6800 1600 6800
+Wire Wire Line
+	1600 6900 1400 6900
+Wire Wire Line
+	1400 7000 1600 7000
+Wire Wire Line
+	1600 7100 1400 7100
+Wire Wire Line
+	1400 7200 1600 7200
+$Comp
+L R R201
+U 1 1 57B55C87
+P 5400 3850
+F 0 "R201" V 5480 3850 50  0000 C CNN
+F 1 "68" V 5400 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5330 3850 30  0001 C CNN
+F 3 "" H 5400 3850 30  0000 C CNN
+	1    5400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R202
+U 1 1 57B55E93
+P 5500 3550
+F 0 "R202" V 5580 3550 50  0000 C CNN
+F 1 "68" V 5500 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5430 3550 30  0001 C CNN
+F 3 "" H 5500 3550 30  0000 C CNN
+	1    5500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R203
+U 1 1 57B55ECE
+P 5600 3250
+F 0 "R203" V 5680 3250 50  0000 C CNN
+F 1 "68" V 5600 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5530 3250 30  0001 C CNN
+F 3 "" H 5600 3250 30  0000 C CNN
+	1    5600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R204
+U 1 1 57B55F0E
+P 5700 2950
+F 0 "R204" V 5780 2950 50  0000 C CNN
+F 1 "68" V 5700 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5630 2950 30  0001 C CNN
+F 3 "" H 5700 2950 30  0000 C CNN
+	1    5700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R205
+U 1 1 57B55F4F
+P 5800 2650
+F 0 "R205" V 5880 2650 50  0000 C CNN
+F 1 "68" V 5800 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5730 2650 30  0001 C CNN
+F 3 "" H 5800 2650 30  0000 C CNN
+	1    5800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R206
+U 1 1 57B55F92
+P 5900 2350
+F 0 "R206" V 5980 2350 50  0000 C CNN
+F 1 "68" V 5900 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5830 2350 30  0001 C CNN
+F 3 "" H 5900 2350 30  0000 C CNN
+	1    5900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R207
+U 1 1 57B55FD8
+P 6000 2050
+F 0 "R207" V 6080 2050 50  0000 C CNN
+F 1 "68" V 6000 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5930 2050 30  0001 C CNN
+F 3 "" H 6000 2050 30  0000 C CNN
+	1    6000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R208
+U 1 1 57B5606A
+P 6100 1750
+F 0 "R208" V 6180 1750 50  0000 C CNN
+F 1 "68" V 6100 1750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6030 1750 30  0001 C CNN
+F 3 "" H 6100 1750 30  0000 C CNN
+	1    6100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1400 6100 1600
+Wire Wire Line
+	6000 1800 6000 1900
+Wire Wire Line
+	5900 2100 5900 2200
+Wire Wire Line
+	5800 2400 5800 2500
+Wire Wire Line
+	5700 2700 5700 2800
+Wire Wire Line
+	5600 3000 5600 3100
+Wire Wire Line
+	5500 3300 5500 3400
+Wire Wire Line
+	5400 3600 5400 3700
+$Comp
+L Q_NPN_BCE Q201
+U 1 1 57BB8FDC
+P 3200 3300
+F 0 "Q201" H 3500 3350 50  0000 R CNN
+F 1 "BCX56" H 3800 3250 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 3400 3400 29  0001 C CNN
+F 3 "" H 3200 3300 60  0000 C CNN
+	1    3200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q202
+U 1 1 57BB9249
+P 3600 3000
+F 0 "Q202" H 3900 3050 50  0000 R CNN
+F 1 "BCX56" H 4200 2950 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 3800 3100 29  0001 C CNN
+F 3 "" H 3600 3000 60  0000 C CNN
+	1    3600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q203
+U 1 1 57BB9289
+P 4000 2700
+F 0 "Q203" H 4300 2750 50  0000 R CNN
+F 1 "BCX56" H 4600 2650 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 4200 2800 29  0001 C CNN
+F 3 "" H 4000 2700 60  0000 C CNN
+	1    4000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q204
+U 1 1 57BB92CB
+P 4400 2400
+F 0 "Q204" H 4700 2450 50  0000 R CNN
+F 1 "BCX56" H 5000 2350 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 4600 2500 29  0001 C CNN
+F 3 "" H 4400 2400 60  0000 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q205
+U 1 1 57BB9311
+P 4800 2100
+F 0 "Q205" H 5100 2150 50  0000 R CNN
+F 1 "BCX56" H 5400 2050 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 5000 2200 29  0001 C CNN
+F 3 "" H 4800 2100 60  0000 C CNN
+	1    4800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q206
+U 1 1 57BB93D5
+P 5200 1800
+F 0 "Q206" H 5500 1850 50  0000 R CNN
+F 1 "BCX56" H 5800 1750 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 5400 1900 29  0001 C CNN
+F 3 "" H 5200 1800 60  0000 C CNN
+	1    5200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q207
+U 1 1 57BB941E
+P 5600 1500
+F 0 "Q207" H 5900 1550 50  0000 R CNN
+F 1 "BCX56" H 6200 1450 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 5800 1600 29  0001 C CNN
+F 3 "" H 5600 1500 60  0000 C CNN
+	1    5600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q208
+U 1 1 57BB946D
+P 6000 1200
+F 0 "Q208" H 6300 1250 50  0000 R CNN
+F 1 "BCX56" H 6600 1150 50  0000 R CNN
+F 2 "Housings_SOT-89:SOT89-3_Housing" H 6200 1300 29  0001 C CNN
+F 3 "" H 6000 1200 60  0000 C CNN
+	1    6000 1200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
