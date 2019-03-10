@@ -12,4 +12,6 @@
 
 void segmentDisplayInit(void);
 
+void displayValues(float val0, float val1);
+
 #endif /* SEGMENT_DISPLAY_H_ */

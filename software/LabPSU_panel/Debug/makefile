@@ -8,7 +8,6 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -31,43 +30,42 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-PowerSupplyPanel.lss \
+LabPSU_panel.lss \
 
 SIZEDUMMY += \
 sizedummy \
 
 
 # All Target
-all: PowerSupplyPanel.elf secondary-outputs
+all: LabPSU_panel.elf secondary-outputs
 
 # Tool invocations
-PowerSupplyPanel.elf: $(OBJS) $(USER_OBJS)
+LabPSU_panel.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,PowerSupplyPanel.map -mmcu=atmega8 -o "PowerSupplyPanel.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,LabPSU_panel.map -mmcu=atmega8 -o "LabPSU_panel.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-PowerSupplyPanel.lss: PowerSupplyPanel.elf
+LabPSU_panel.lss: LabPSU_panel.elf
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S PowerSupplyPanel.elf  >"PowerSupplyPanel.lss"
+	-avr-objdump -h -S LabPSU_panel.elf  >"LabPSU_panel.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-sizedummy: PowerSupplyPanel.elf
+sizedummy: LabPSU_panel.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega8 PowerSupplyPanel.elf
+	-avr-size --format=avr --mcu=atmega8 LabPSU_panel.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) PowerSupplyPanel.elf
+	-$(RM) $(ELFS)$(OBJS)$(ASM_DEPS)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) LabPSU_panel.elf
 	-@echo ' '
 
 secondary-outputs: $(LSS) $(SIZEDUMMY)
 
 .PHONY: all clean dependents
-.SECONDARY:
 
 -include ../makefile.targets
